@@ -3,6 +3,7 @@ export default function TituloComponente({texto}){
         <>
         <section>
             <h2>{texto}</h2>
+            
         </section>
         </>
     )
