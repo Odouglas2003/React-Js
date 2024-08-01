@@ -1,0 +1,17 @@
+.imgen{
+    height: 80px !important;
+    width: 100px !important;
+    border-radius: 30px;
+    margin-left:50px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+.boton{
+    padding-top: 3px;
+    height: 50px;
+    width: 140px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #3ac23f00;
+    border: none;
+}

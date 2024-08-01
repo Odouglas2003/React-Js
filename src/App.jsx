@@ -1,14 +1,21 @@
 import './App.css'
-import TituloComponente from './components/TituloComponente'
-
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/main/ItemListContainer';
 function App() {
   const misestilo={
-    color: '#FFFFFF',
+    color: 'black',
   }
   return(
    <>
-   <h1 style={misestilo}>Hola Reactc</h1>
-   <TituloComponente texto='soy un malo programando'/>
+   <header className='header'>
+   <NavBar/>
+   </header>
+
+   <main className='text-center'>
+     <ItemListContainer />
+   </main>
+   
+   
     </>
   )
 }
