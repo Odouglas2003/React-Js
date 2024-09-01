@@ -1,6 +1,5 @@
 export default function Cartwidjet(){
     const MisEstilo={
-        width: '40px',
         height: '40px',
         color: 'white',
     }

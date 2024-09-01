@@ -1,0 +1,18 @@
+*{
+    color: rgb(253, 253, 253);
+}
+.articulo{
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px;
+}
+.imagepro{
+    
+    max-width: 100px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+}

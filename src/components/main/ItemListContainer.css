@@ -2,3 +2,34 @@
 color: rgb(255, 255, 255);
 background-color: rgba(0, 0, 0, 0);
 }
+article{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    border:1px solid white ;
+    border-radius: 5px;
+    margin: 8px,
+}
+.titulopro{
+    color: rgb(253, 253, 253);
+}
+.imagepro{
+    
+    max-width: 100px;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+}
+.carta{
+    width: 100%;
+}
+.articulopro{
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px;
+
+}
