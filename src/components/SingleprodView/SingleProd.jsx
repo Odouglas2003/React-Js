@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProduct } from '../../asyncMock.js';
 import "./SingleProd.css"
@@ -11,6 +11,25 @@ export default function SingleProd() {
     setProduct(getProduct(prodId));
   }, [prodId]);
 
+  const [cont, setCont] = useState(0);
+  const clicksRef = useRef(0);
+
+  const handleInc = () => {
+    setCont(cont + 1);
+    clicksRef.current++;
+    console.log(
+      'Estadistica: el usuario interactuo ' + clicksRef.current + ' veces'
+    );
+  };
+
+  const handleDec = () => {
+    setCont(cont - 1);
+    clicksRef.current++;
+    console.log(
+      'Estadistica: el usuario interactuo ' + clicksRef.current + ' veces'
+    );
+  };
+
   return (
     <>
     <section className='d-flex justify-content-center'>
@@ -22,6 +41,11 @@ export default function SingleProd() {
         <p>{product.price}</p>
         <p>{product.description}</p>
         <p>{product.category}</p>
+        <section className='d-flex justify-content-evenly'>
+        <button onClick={handleInc}>+</button>
+        <p>{cont}</p>
+        <button onClick={handleDec}>-</button>
+        </section>
       </article>
       </section>
     </>
