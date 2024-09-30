@@ -16,11 +16,6 @@ export default function NavBar(){
             <Link to={'/contact'}>
             <ButtonComponent nombre="CONTACTO"/>
             </Link>
-
-            
-            {/* <ButtonComponent nombre="ABRIGO"/>
-            <ButtonComponent nombre="PANTALONES"/>
-            <ButtonComponent nombre="REMERAS"/> */}
             <Cartwidjet/>
         </nav>
         </>
