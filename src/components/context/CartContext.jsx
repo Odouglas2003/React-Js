@@ -1,5 +1,5 @@
 import { createContext,useState} from 'react';
-import { getProds } from '../../asyncMock';
+
 //creamo el context
 export const CartContext = createContext(false);
 

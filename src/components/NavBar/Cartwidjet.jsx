@@ -10,12 +10,15 @@ export default function Cartwidjet(){
     const [cart] = useContext(CartContext)
     return(
         <>
+
+        
+        <Link to={'/Cart'}>
         <li className="d-flex ms-4">
         <img className="mt-4 ms-5" style={MisEstilo} src="./src/assets/img/klipartz.com.png" alt="carrito de compra" />
-        <Link to={'/Cart'}>
         <p  style={MisEstilo} className="fs-6 mt-2">{cart.length}</p>
-        </Link>
         </li>
+        </Link>
+
         </>
     )
 }
