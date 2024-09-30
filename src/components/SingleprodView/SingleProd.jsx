@@ -65,7 +65,7 @@ export default function SingleProd() {
           <p className='letra '>Precio: ${product.price}</p>
           <p className='letra '>Descripción: {product.description}</p>
           <p className='letra '>Categoría: {product.category}</p>
-          <ItemCount price={product.price} stock={product.stock} agregarAlCarrito={onAdd} />
+          <ItemCount price={product.price}  agregarAlCarrito={onAdd} />
         </article>
       </section>
     </>
